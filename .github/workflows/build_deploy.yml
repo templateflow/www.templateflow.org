@@ -34,6 +34,8 @@ jobs:
         ssh-key: "${{ secrets.NIPREPS_DEPLOY }}"
     - name: Generate new JSON tree
       run: |
+        git config --global user.email "nipreps@gmail.com"
+        git config --global user.name "templateflow-bot"
         cp -r site/* gh-pages/
         cd gh-pages
         echo -e "a\n*\nq\n"|git add -i
