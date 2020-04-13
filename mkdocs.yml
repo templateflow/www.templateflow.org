@@ -1,0 +1,33 @@
+site_name: TemplateFlow
+site_description: A standardized archive and client of neuroimaging templates
+site_author: The NiPreps developers
+site_url: https://www.templateflow.org
+
+# Repository
+repo_name: templateflow/templateflow
+repo_url: https://github.com/templateflow/templateflow
+
+# Copyright
+copyright: Copyright &copy; 2020 - The NiPreps developers
+
+nav:
+    - Home: index.md
+    - Templates Archive: archive.md
+    - Python Client: client.md
+    - Contributing: contributing.md
+theme:
+  name: material
+  custom_dir: custom_theme
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - toc-sidebar
