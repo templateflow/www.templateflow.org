@@ -28,7 +28,9 @@ def _leafnode(entry):
         "icon": "fa fa-file",
     }
     if filename.rstrip(".gz").endswith(".nii"):
-        node["icon"] = "fas fa-brain"
+        node["icon"] = "fas fa-brain" if "_atlas-" not in filename else "fas fa-globe"
+        if "_mask.nii" in filename:
+            node["icon"] = "fas fa-crop-alt"
         node["href"] = "/".join([TF_S3_ROOT] + entry)
         return node
 
