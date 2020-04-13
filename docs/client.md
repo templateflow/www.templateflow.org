@@ -75,6 +75,36 @@ $ python -c "import templateflow as tf; print(tf.__version__)"
 0.6.0
 ```
 
+## FAQ
+
+### Why am I getting zero-sized NIfTI files?
+
+(From: [templateflow/tpl-MNI152NLin2009cAsym#7][faq_zerosize_1])
+
+If you just installed _TemplateFlow_ without explicitly setting the DataLad mode of operation
+on, then it will be using the S3 backend.
+To allow lazy loading, S3-operated client installations deploy an _archive skeleton_ to the
+_TemplateFlow Home_ directory.
+This skeleton contains zero-size files, that are replaced by the appropriate content pulled down
+from S3 on the first utilization.
+
+So, if you just installed the client, and want to open a particular template image with the
+Mango visualization tool, instead of just doing:
+
+``` bash
+$ mango ${TEMPLATEFLOW_HOME:-$HOME/.cache/templateflow}/tpl-MNI152NLin6Asym/tpl-MNI152NLin6Asym_res-01_T1w.nii.gz
+```
+
+Please make sure you use the client to access the image, for instance:
+
+``` bash
+$ mango $( python -c "from templateflow.api import get; \
+          print(str(get('MNI152NLin6Asym', resolution=1, suffix='T1w', desc=None, extension='nii.gz')))" )
+```
+
+A pretty close behavior will be expected when operating in DataLad mode, although instead of getting
+zero-sized files, you'll probably get a straight _file not found_ error.
+
 ## Documentation for developers
 
 The client is thought out to be integrated in higher-level neuroimaging workflows,
@@ -86,3 +116,5 @@ Further details about the usage of the tool are found in the [documentation][5].
 [mriqc]: https://mriqc.readthedocs.io "MRIQC"
 [5]: https://templateflow.github.io/python-client "TemplateFlow Python client documentation"
 [fmriprep_singularity]: https://fmriprep.readthedocs.io/en/stable/singularity.html#templateflow-and-singularity "Singularity"
+
+[faq_zerosize_1]: https://github.com/templateflow/tpl-MNI152NLin2009cAsym/issues/7 "Zerosize Issue"
