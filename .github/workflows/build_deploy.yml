@@ -25,3 +25,17 @@ jobs:
     - name: Build
       run: |
         mkdocs build
+
+    - name: Checkout the Python client
+      uses: actions/checkout@v2
+      with:
+        repository: templateflow/templateflow.github.io
+        path: gh-pages
+        ssh-key: "${{ secrets.NIPREPS_DEPLOY }}"
+    - name: Generate new JSON tree
+      run: |
+        cp -r site/* gh-pages/
+        cd gh-pages
+        echo -e "a\n*\nq\n"|git add -i
+        git commit -am "auto: Update website"
+        git push
