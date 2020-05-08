@@ -77,6 +77,19 @@ $ python -c "import templateflow as tf; print(tf.__version__)"
 
 ## FAQ
 
+### Custom (study / population specific) templates
+
+As [Chris noted in this fundamental thread](https://github.com/poldracklab/smriprep/issues/8):
+
+> Custom (volume and surface) templates derived from a particular dataset have been shown to improve overlap between participants. It is also the recommended way to deal with smaller head sizes in developmental populations. Both ANTs and FreeSurfer support building such templates.
+
+It is possible to integrate custom templates into TemplateFlow in two steps:
+
+1. Organize your [template accordingly](archive.md#naming-conventions).
+2. Copy the custom template tree into the `$TEMPLATEFLOW_HOME` directory.
+
+Please make sure you include all the necessary files and resolutions that then will be utilized by downstream software.
+
 ### Why am I getting zero-sized NIfTI files?
 
 (From: [templateflow/tpl-MNI152NLin2009cAsym#7][faq_zerosize_1])
