@@ -12,12 +12,18 @@ copyright: Copyright &copy; 2020 - The NiPreps developers
 
 nav:
     - Home: index.md
-    - Templates Archive: archive.md
-    - Python Client: client.md
-    - Contributing: contributing.md
+    - Usage:
+      - TemplateFlow Archive: usage/archive.md
+      - Python Client: usage/client.md
+    - Contributing:
+      - Guidelines: contributing/guidelines.md
+      - Naming Conventions: contributing/naming.md
+      - Submitting a new template: contributing/submission.md
 theme:
   name: material
   custom_dir: custom_theme
+  features:
+    - tabs
 
 markdown_extensions:
   - admonition

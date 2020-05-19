@@ -73,13 +73,13 @@ There are three different types of contributions you can make to TemplateFlow.
 **Python client**
 :   You are implementing a new feature or fixing a bug of the Python client.
     Or you are improving its documentation. Please refer to the
-    [Python client](client.md) area.
+    [Python client](../usage/client.md) area.
 
 There are tutorials for each of these different types of contributions.
 
 ## Template Style Guide
 
-Please check [the documentation](archive.md) about how templates are structure
+Please check [the documentation](../usage/archive.md) about how templates are structure
 and appropriate names for their files.
 
 ## Recognizing contributions
