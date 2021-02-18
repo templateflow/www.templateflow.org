@@ -1,0 +1,4 @@
+.md-typeset table:not([class]) th {
+    background-color: white;
+    background: white;
+}
