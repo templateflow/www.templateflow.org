@@ -33,10 +33,10 @@ $ datalad get -r tpl-MNI152NLin2009cAsym
 
 The _TemplateFlow Archive_ contains template resources.
 
-![Data Types](assets/templateflow_fig-archive.png)
+![Data Types](../assets/templateflow_fig-archive.png)
 Common file formats included in the _TemplateFlow Archive_.
 
-![Metadata](assets/templateflow_fig-metadata.png)
+![Metadata](../assets/templateflow_fig-metadata.png)
 Overview of the _TemplateFlow Archive_ metadata specification. 
 _TemplateFlow_ metadata are formatted as JavaScript Object Notation (JSON) files located at the top of the template's directory.
 An example `template_description.json` metadata file is displayed at left (for the pediatric MNI template).
