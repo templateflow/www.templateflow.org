@@ -19,7 +19,7 @@ TemplateFlow follows a BIDS-like structure, please make sure your tree is format
 
 !!! info "Examples"
 
-    Please check the formatting of existing templates in the [Archive browser](../usage/archive.md#browse-the-archive)
+    Please check the formatting of existing templates in the [Archive browser](../browser.md)
 
 ## Step 2: Create a new public project at osf.io
 

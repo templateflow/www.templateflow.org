@@ -9,7 +9,7 @@ _TemplateFlow_ is a modular, version-controlled resource that allows researchers
 |:--:| 
 | The 7 templates highlighted in blue are constituents of the Montreal Neurological Institute (MNI) portfolio. The Waxholm space (`WHS`) and `Fischer344` templates provide references for rat neuroimaging. `fsaverage` and `fsLR` are surface templates; the remaining templates are volumetric. Each template is distributed with atlas labels, segmentations, and metadata files. The 15 templates displayed here are only a small fraction of those created as stereotaxic references for the neuroimaging community. |
 
-Please head over to our [_TemplateFlow Archive_ browser](usage/browse.md).
+Please head over to our [_TemplateFlow Archive_ browser](browse.md).
 
 ![Poster](assets/poster-templateflow.png)
 
