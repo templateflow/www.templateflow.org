@@ -33,7 +33,7 @@ $ datalad get -r tpl-MNI152NLin2009cAsym
 
 The _TemplateFlow Archive_ contains template resources.
 
-![Data Types](../assets/templateflow_fig-archive.png)
+![Data Types](../assets/templateflow-datatypes.png)
 Common file formats included in the _TemplateFlow Archive_.
 
 ![Metadata](../assets/templateflow_fig-metadata.png)
