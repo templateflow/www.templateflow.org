@@ -14,6 +14,7 @@ nav:
     - Home: index.md
     - Usage:
       - TemplateFlow Archive: usage/archive.md
+      - Archive Browser: usage/browse.md
       - Python Client: usage/client.md
     - Contributing:
       - Guidelines: contributing/guidelines.md

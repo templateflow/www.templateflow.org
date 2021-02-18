@@ -5,6 +5,15 @@ To that end, a multiplicity of brain templates with anatomical annotations (i.e.
 However, a centralized resource that allows programmatic access to templates is lacking.
 _TemplateFlow_ is a modular, version-controlled resource that allows researchers to use templates "off-the-shelf" and share new ones.
 
+![Figure1](assets/templateflow_fig-templates.png)
+The 7 templates highlighted in blue are constituents of the Montreal Neurological Institute (MNI) portfolio.
+The Waxholm space (`WHS`) and `Fischer344` templates provide references for rat neuroimaging.
+`fsaverage` and `fsLR` are surface templates; the remaining templates are volumetric.
+Each template is distributed with atlas labels, segmentations, and metadata files.
+The 15 templates displayed here are only a small fraction of those created as stereotaxic references for the neuroimaging community.
+
+Please head over to our [_TemplateFlow Archive_ browser](usage/browse.md).
+
 ![Poster](assets/poster-templateflow.png)
 
 

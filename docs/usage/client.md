@@ -1,7 +1,7 @@
 
 ## About the Python client
-The Python client provides an easy to use tool to integrate the TemplateFlow Archive into Python code and notebooks.
-The Python client uses PyBIDS to index and query the TemplateFlow Archive.
+The Python client provides an easy to use tool to integrate the _TemplateFlow Archive_ into Python code and notebooks.
+The Python client uses PyBIDS to index and query the _TemplateFlow Archive_.
 A practical example of how this operates follows:
 
 ``` python
@@ -30,6 +30,15 @@ further Internet access.
     settings, the default home folder (see below) will be non-writable.
     Please check [_fMRIPrep_'s documentation][fmriprep_singularity] for further information
     on how to use _TemplateFlow_ within Singularity.
+
+## The Python client in a nutshell
+
+![Client](assets/templateflow_fig-client.png)
+Example usage of the Python client.
+After importing the API, the user submits a query for the T1-weighted FSL version of the MNI template at 1 mm resolution.
+The client first filters through the archive, identifies any files that match the query, and finds their counterparts in cloud storage.
+It then downloads the requested files and returns their paths in the local _TemplateFlow_ installation directory.
+Future queries for the same resource can be completed without any re-downloading.
 
 ## Installation
 
