@@ -9,11 +9,9 @@
 
 ## Overview: Submission pipeline and the _TemplateFlow Manager_ tool
 
-![Manager](../assets/templateflow_fig-manager.png)
-To contribute a new template to _TemplateFlow_, members of the community first organise template resources to conform to the BIDS-like _TemplateFlow_ structure.
-Next, the _TemplateFlow Manager_ tool (`tfmgr`) synchronises the resources to OSF cloud storage and opens a new pull request proposing the addition of the new template.
-A subsequent peer-review process ensures that all data are conformant with the _TemplateFlow_ standard.
-Finally, _TemplateFlow_ curators conclude the peer-review process with the merge of the pull request, thereby adding the template into the _TemplateFlow Archive_.
+| ![Manager](../assets/templateflow_fig-manager.png) |
+|:--:| 
+| To contribute a new template to _TemplateFlow_, members of the community first organise template resources to conform to the BIDS-like _TemplateFlow_ structure. Next, the _TemplateFlow Manager_ tool (`tfmgr`) synchronises the resources to OSF cloud storage and opens a new pull request proposing the addition of the new template. A subsequent peer-review process ensures that all data are conformant with the _TemplateFlow_ standard. Finally, _TemplateFlow_ curators conclude the peer-review process with the merge of the pull request, thereby adding the template into the _TemplateFlow Archive_. |
 
 ## Step 1: Organize your template tree
 

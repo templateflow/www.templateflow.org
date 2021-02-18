@@ -33,14 +33,13 @@ $ datalad get -r tpl-MNI152NLin2009cAsym
 
 The _TemplateFlow Archive_ contains template resources.
 
-![Data Types](../assets/templateflow-datatypes.png)
-Common file formats included in the _TemplateFlow Archive_.
+| ![Data Types](../assets/templateflow-datatypes.png) |
+|:--:| 
+| **Common file formats included in the _TemplateFlow Archive_.** |
 
-![Metadata](../assets/templateflow_fig-metadata.png)
-Overview of the _TemplateFlow Archive_ metadata specification. 
-_TemplateFlow_ metadata are formatted as JavaScript Object Notation (JSON) files located at the top of the template's directory.
-An example `template_description.json` metadata file is displayed at left (for the pediatric MNI template).
-In addition to general template metadata, _TemplateFlow_ datasets can contain cohort-level and resolution-level metadata, which are nested within the main metadata dictionary and apply only to subsets of images in the dataset.
+| ![Metadata](../assets/templateflow_fig-metadata.png) |
+|:--:| 
+| **Overview of the _TemplateFlow Archive_ metadata specification**.  _TemplateFlow_ metadata are formatted as JavaScript Object Notation (JSON) files located at the top of the template's directory. An example `template_description.json` metadata file is displayed at left (for the pediatric MNI template). In addition to general template metadata, _TemplateFlow_ datasets can contain cohort-level and resolution-level metadata, which are nested within the main metadata dictionary and apply only to subsets of images in the dataset. |
 
 
 [3]: https://datalad.org "DataLad"

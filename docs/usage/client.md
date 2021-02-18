@@ -33,12 +33,9 @@ further Internet access.
 
 ## The Python client in a nutshell
 
-![Client](../assets/templateflow_fig-client.png)
-Example usage of the Python client.
-After importing the API, the user submits a query for the T1-weighted FSL version of the MNI template at 1 mm resolution.
-The client first filters through the archive, identifies any files that match the query, and finds their counterparts in cloud storage.
-It then downloads the requested files and returns their paths in the local _TemplateFlow_ installation directory.
-Future queries for the same resource can be completed without any re-downloading.
+| ![Client](../assets/templateflow_fig-client.png) |
+|:--:| 
+| **Example usage of the Python client**. After importing the API, the user submits a query for the T1-weighted FSL version of the MNI template at 1 mm resolution. The client first filters through the archive, identifies any files that match the query, and finds their counterparts in cloud storage. It then downloads the requested files and returns their paths in the local _TemplateFlow_ installation directory. Future queries for the same resource can be completed without any re-downloading. |
 
 ## Installation
 
