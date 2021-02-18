@@ -16,6 +16,7 @@ nav:
       - TemplateFlow Archive: usage/archive.md
       - Archive Browser: usage/browse.md
       - Python Client: usage/client.md
+      - Cite TemplateFlow: usage/citing.md
     - Contributing:
       - Guidelines: contributing/guidelines.md
       - Naming Conventions: contributing/naming.md
