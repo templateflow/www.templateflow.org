@@ -11,6 +11,12 @@ _TemplateFlow_ is a modular, version-controlled resource that allows researchers
 
 Please head over to our [_TemplateFlow Archive_ browser](browse.md).
 
+## Bird's view over *TemplateFlow*
+
+| ![Figure2](assets/templateflow_fig-birdsview.png) |
+|:--:| 
+| ***TemplateFlow* implements the FAIR guiding principles.** The *TemplateFlow Archive* can be accessed at a “low” level with DataLad, or at a “high” level with a *Python client*. New resources can be added through the *TemplateFlow Manager* Command Line Interface, which initiates a peer-review process before acceptance in the *Archive*. |
+
 ![Poster](assets/poster-templateflow.png)
 
 
