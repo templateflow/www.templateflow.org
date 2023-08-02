@@ -31,7 +31,7 @@ jobs:
       with:
         repository: templateflow/templateflow.github.io
         path: gh-pages
-        ssh-key: "${{ secrets.TF_WEB_DEPLOY }}"
+        ssh-key: "${{ secrets.NIPREPS_BOT_SSH_KEY }}"
     - name: Generate new JSON tree
       run: |
         git config --global user.email "nipreps@gmail.com"
