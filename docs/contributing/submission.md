@@ -43,6 +43,11 @@ Good guidelines [on how to create your PAT on OSF are given here](https://mjaqui
 
 **On GitHub**: Then, you also want to generate a PAT to authenticate against GitHub.
 If you are unsure of how to properly create one, please follow the [official guidelines](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), in particular, it is likely easier to avoid permissions problems if you take the [classic tokens route](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
+The permissions summary before finally creating the PAT should look as follows:
+
+| ![GH PAT permissions](../assets/gh-pat-permissions.png) |
+|:--:| 
+| For the *TemplateFlow Manager* to work, the PAT must have associated a number of permissions. |
 
 !!! critical "Make sure you store both tokens safely and that you will be able to retrieve them later"
 
