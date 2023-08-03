@@ -21,14 +21,7 @@ TemplateFlow follows a BIDS-like structure, please make sure your tree is format
 
     Please check the formatting of existing templates in the [Archive browser](../browse.md)
 
-## Step 2: Create a new public project at osf.io
-
-Head to [your OSF home](https://osf.io/dashboard) and create a new project.
-Make sure you **make your project public** and write down the project identifier from the URL.
-
-![Screenshot](../assets/osf-project-creation.gif)
-
-## Step 3: Install the TemplateFlow Manager and `tfmgr add` your template
+## Step 2: Install the *TemplateFlow Manager*
 
 Installing the manager is as easy as:
 
@@ -43,18 +36,36 @@ $ tfmgr --version
 TF Archive manager 20.0.0
 ```
 
-Finally, set up your OSF and GitHub authorization details and call `add`.
-It is fundamental to copy here the OSF project ID from step 2.
+## Step 3: Prepare your credentials for authentication
+
+**On OSF.io**: First, generate a personal authentication token (PAT) to authenticate your username and be able to upload data to OSF.
+Good guidelines [on how to create your PAT on OSF are given here](https://mjaquiery.github.io/jspsych-born-open-data/osf-pat/index.html).
+
+**On GitHub**: Then, you also want to generate a PAT to authenticate against GitHub.
+If you are unsure of how to properly create one, please follow the [official guidelines](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens), in particular, it is likely easier to avoid permissions problems if you take the [classic tokens route](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
+
+!!! critical "Make sure you store both tokens safely and that you will be able to retrieve them later"
+
+**At this point, you can set up your credentials**
 
 ```Shell
-$ export OSF_USERNAME='some@email.com'
-$ export OSF_PASSWORD='****'
-$ export GITHUB_USER='oesteban'
-$ export GITHUB_PASSWORD='****'  # or personal access token
-
-# Assuming the template is at the current directory, under tpl-Name/
-$ tfmgr add tpl-Name --osf-project '<project_id>'
+$ export OSF_TOKEN='<copy and paste your OSF PAT here>'
+$ export GITHUB_USER='<your GitHub handle>'  # For instance, 'oesteban'
+$ export GITHUB_TOKEN='<copy and paste your GitHub PAT here>'
 ```
+
+## Step 4: Add your template with `tfmgr add`
+
+```Shell
+# Assuming the template is at the current directory, under tpl-Name/
+$ tfmgr add tpl-Name'
+```
+
+## Finished: The peer-review process is now initiated
+
+Once `tfmgr add` has concluded successfully, you'll be provided with a URL that points to a newly created PR against the templateflow superdataset.
+That means your PR will now be listed at the [`templateflow/templateflow` repo](https://github.com/templateflow/templateflow/pulls).
+Now, the [*TemplateFlow* maintainers](https://github.com/orgs/templateflow/teams/maintainers) will carry out *editorial management* of your proposed template and have it peer-reviewed before it is finally *merged* into *TemplateFlow*.
 
 ## Wrapping up
 
