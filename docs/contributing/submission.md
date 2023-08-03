@@ -72,8 +72,10 @@ Once `tfmgr add` has concluded successfully, you'll be provided with a URL that 
 That means your PR will now be listed at the [`templateflow/templateflow` repo](https://github.com/templateflow/templateflow/pulls).
 Now, the [*TemplateFlow* maintainers](https://github.com/orgs/templateflow/teams/maintainers) will carry out *editorial management* of your proposed template and have it peer-reviewed before it is finally *merged* into *TemplateFlow*.
 
+<!-- The screencast is outdated
 ## Wrapping up
 
 This screencast summarizes the three-step process above:
 
 <script id="asciicast-331256" src="https://asciinema.org/a/331256.js" async data-autoplay="true" data-speed="4" data-theme="tango"></script>
+-->
