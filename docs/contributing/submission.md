@@ -49,7 +49,7 @@ The permissions summary before finally creating the PAT should look as follows:
 |:--:| 
 | For the *TemplateFlow Manager* to work, the PAT must have associated a number of permissions. |
 
-!!! critical "Make sure you store both tokens safely and that you will be able to retrieve them later"
+!!! danger "Make sure you store both tokens safely and that you will be able to retrieve them later"
 
 **At this point, you can set up your credentials**
 
