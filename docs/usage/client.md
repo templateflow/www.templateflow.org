@@ -41,8 +41,12 @@ further Internet access.
 
 ### Before you start
 
-By default, the local cache of the archive is stored under `$HOME/.cache/templateflow`.
-If you need to change the location of the local copy, make sure you set the `TEMPLATEFLOW_HOME`
+By default, the local cache of the archive is stored in a OS-dependent, user-specific directory.
+This directory will be `$HOME/.cache/templateflow` (or `$XDG_CACHE_HOME/templateflow`),
+`$HOME/Library/Caches/templateflow`, or `%USERPROFILE%\AppData\Local\$appauthor\$appname\Cache`
+for Linux/Unix, MacOS, and Windows, respectively.
+
+If you need to change the location of the local copy, set the `TEMPLATEFLOW_HOME`
 environment variable:
 
 ``` bash
@@ -108,10 +112,10 @@ This skeleton contains zero-size files, that are replaced by the appropriate con
 from S3 on the first utilization.
 
 So, if you just installed the client, and want to open a particular template image with the
-Mango visualization tool, instead of just doing:
+Mango visualization tool, instead of just doing, for example:
 
 ``` bash
-$ mango ${TEMPLATEFLOW_HOME:-$HOME/.cache/templateflow}/tpl-MNI152NLin6Asym/tpl-MNI152NLin6Asym_res-01_T1w.nii.gz
+$ mango $TEMPLATEFLOW_HOME/tpl-MNI152NLin6Asym/tpl-MNI152NLin6Asym_res-01_T1w.nii.gz
 ```
 
 Please make sure you use the client to access the image, for instance:
